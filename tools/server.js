@@ -21,8 +21,8 @@ app.get('*', (req, res) => {
 
 app.listen(port, (err)=> {
   if (err) {
-    console.log(err)
+    console.log(err);
   } else {
-    console.log(`server is running on ${port}`)
+    console.log(`server is running on ${port}`);
   }
-})
+});
