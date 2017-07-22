@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import App from './Components/App';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import Courses from './Components/Course/Courses';
 
 
 class Main extends React.Component {
@@ -11,8 +12,9 @@ class Main extends React.Component {
     return(
       <div>
         <Switch>
-          <Route exact path='/about' component={About}/>
-          <Route path='/home' component={Home}/>
+          <Route exact path='/' component={Home}/>
+          <Route path='/courses' component={Courses}/>
+          <Route path='/about' component={About}/>
         </Switch>
       </div>
     )
